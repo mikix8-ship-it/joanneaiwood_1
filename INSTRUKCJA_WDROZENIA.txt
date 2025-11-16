@@ -1,0 +1,81 @@
+====================================================
+🚀 INSTRUKCJA WDROŻENIA NAPRAWIONEJ STRONY
+====================================================
+
+CO ZOSTAŁO NAPRAWIONE:
+----------------------
+✅ Wszystkie 6 linków działa (osadzone w HTML)
+✅ "Digital muse" zamiast "AI creator"  
+✅ Usunięty panel admina (niepotrzebny)
+✅ Naprawiony tryb ciemny/jasny
+✅ Przygotowane na tło strony
+✅ Wszystko w JEDNYM pliku = łatwiejsza edycja
+
+KROK 1: USUŃ STARE PLIKI Z GITHUB
+----------------------------------
+1. Idź na: github.com/mikix8-ship-it/joanneaiwood
+2. Kliknij każdy plik → ikona kosza → "Commit changes"
+3. Usuń WSZYSTKO oprócz folderu assets (jeśli jest)
+
+KROK 2: WGRAJ NOWY PLIK
+------------------------
+1. Kliknij "Add file" → "Create new file"
+2. Nazwij go: index.html
+3. Skopiuj CAŁĄ zawartość pliku index_fixed.html
+4. Wklej do okna edytora
+5. Przewiń na dół → "Commit new file"
+
+KROK 3: DODAJ OBRAZKI
+---------------------
+Musisz wgrać 2 obrazki do folderu /assets/:
+
+1. AVATAR (obowiązkowy):
+   - Nazwa: avatar.jpg
+   - Rozmiar: 120x120px lub większy (kwadrat)
+   - Ścieżka: /assets/avatar.jpg
+
+2. TŁO (opcjonalne):
+   - Nazwa: background.jpg  
+   - Rozmiar: 1920x1080px lub większy
+   - Ścieżka: /assets/background.jpg
+
+JAK WGRAĆ OBRAZKI:
+1. GitHub → "Add file" → "Upload files"
+2. Najpierw stwórz folder:
+   - Nazwij plik: assets/avatar.jpg
+   - Przeciągnij obrazek
+3. Potem drugie zdjęcie:
+   - assets/background.jpg
+   - Przeciągnij obrazek
+4. "Commit changes"
+
+KROK 4: VERCEL AUTOMATYCZNIE ZAKTUALIZUJE
+-----------------------------------------
+- Poczekaj 1-2 minuty
+- Odśwież stronę na Vercel
+- Wszystko powinno działać!
+
+SPRAWDZENIE:
+-----------
+□ 6 linków widocznych (2 featured + 4 zwykłe)
+□ Tryb ciemny/jasny działa (prawy górny róg)
+□ Avatar się wyświetla
+□ Tło jest widoczne (delikatnie)
+□ "Digital muse" w opisie
+
+JAK EDYTOWAĆ W PRZYSZŁOŚCI:
+---------------------------
+1. GitHub → kliknij index.html
+2. Kliknij ikonę ołówka (Edit)
+3. Zmień co chcesz
+4. Commit changes
+5. Vercel automatycznie zaktualizuje
+
+WAŻNE MIEJSCA DO EDYCJI:
+------------------------
+- Linia ~267: "Digital muse & traveler" (opis)
+- Linie 305-350: Linki do portali
+- Linia 89: opacity: 0.1 (intensywność tła)
+- Linia 260: avatar.jpg (ścieżka do zdjęcia)
+
+====================================================
